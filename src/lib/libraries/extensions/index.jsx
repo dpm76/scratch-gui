@@ -46,6 +46,9 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import microvacbotImage from './microvacbot/microvacbot.png';
+import microvacbotButtonImage from './microvacbot/microvacbot-small.png';
+
 export default [
     {
         name: (
@@ -317,5 +320,24 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
+    },
+    {
+        name: 'Microvacbot',
+        extensionId: 'microvacbot',
+        collaborator: 'David Pérez Marinas',
+        iconURL: microvacbotImage,
+        insetIconURL: microvacbotButtonImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="Microvacbot programming blocks."
+                description="Description for the Microvacbot's blocks."
+                id="gui.extension.microvacbot.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false,
+        helpLink: 'https://kinderbauenroboter.org'
     }
 ];
